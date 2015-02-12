@@ -113,8 +113,7 @@ class @Sequence
       @hookUpProgressEvent()
       @updatePageTitle()
 
-      # sequence_links = @content_container.find('a.seqnav')
-      sequence_links = @content_container.find('a')
+      sequence_links = @content_container.find('a.seqnav')
       sequence_links.click @goto
 
       @sr_container.focus();
